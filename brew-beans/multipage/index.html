@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BREW & BEANS — Спешелти кофейня в Москве</title>
+  <meta name="description" content="Спешелти кофейня Brew & Beans в центре Москвы. Slow Bar, свежая обжарка, домашняя выпечка. Забронируйте столик!">
+  <meta property="og:title" content="BREW & BEANS — Искусство медленного кофе">
+  <meta property="og:description" content="Спешелти кофейня в центре Москвы. Slow Bar, свежая обжарка, домашняя выпечка.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="ru_RU">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ========== ШАПКА ========== -->
+<header class="header" id="header">
+  <div class="container">
+    <a href="index.html" class="logo">BREW <span>&</span> BEANS</a>
+    <nav class="nav">
+      <a href="index.html" class="active">Главная</a>
+      <a href="menu.html">Меню</a>
+      <a href="about.html">О нас</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+    <button class="burger" id="burger" type="button" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ========== МОБИЛЬНОЕ МЕНЮ ========== -->
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-mobile-link>Главная</a>
+  <a href="menu.html" data-mobile-link>Меню</a>
+  <a href="about.html" data-mobile-link>О нас</a>
+  <a href="gallery.html" data-mobile-link>Галерея</a>
+  <a href="contact.html" data-mobile-link>Контакты</a>
+</div>
+
+<!-- ========== HERO ========== -->
+<section class="hero" id="hero">
+  <div class="hero-overlay"></div>
+  <div class="hero-parallax"></div>
+  <div class="hero-content">
+    <p class="hero-subtitle reveal">Slow Bar & Roastery</p>
+    <h1 class="hero-title reveal reveal-delay-1">
+      Искусство <i>медленного</i> кофе
+    </h1>
+    <p class="hero-desc reveal reveal-delay-2">
+      Спешелти кофе, приготовленный с вниманием к каждой детали.
+      От зёрна до чашки — наша философия.
+    </p>
+    <div class="hero-buttons reveal reveal-delay-3">
+      <a href="menu.html" class="btn btn-primary">Посмотреть меню</a>
+      <a href="contact.html" class="btn btn-outline">Забронировать столик</a>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <span>Листайте</span>
+    <div class="arrow"></div>
+  </div>
+</section>
+
+<!-- ========== ПРЕИМУЩЕСТВА ========== -->
+<section class="section">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 16px;">
+      <p class="section-label reveal">Почему мы</p>
+      <h2 class="section-title reveal reveal-delay-1">
+        Ваш идеальный кофейный опыт
+      </h2>
+      <p class="section-desc reveal reveal-delay-2" style="margin: 0 auto;">
+        Мы вкладываем душу в каждую чашку.
+      </p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card reveal reveal-delay-1">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Спешелти зёрна</h3>
+        <p>Только отборная арабика от проверенных производителей из Эфиопии, Кении и Колумбии.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-2">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        </div>
+        <h3>Slow Bar</h3>
+        <p>Альтернативные методы заваривания: V60, Chemex, Аэропресс, Сифон. Раскрываем вкус каждого зерна.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-3">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        </div>
+        <h3>Команда профи</h3>
+        <p>Сертифицированные бариста с опытом работы в ведущих кофейнях Европы и России.</p>
+      </div>
+      <div class="feature-card reveal reveal-delay-4">
+        <div class="feature-icon">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <h3>Собственная обжарка</h3>
+        <p>Обжариваем зёрна малыми партиями. Максимальная свежесть и контроль качества на каждом этапе.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== О НАС (ПРЕВЬЮ) ========== -->
+<section class="section" style="background: rgba(255,255,255,0.015);">
+  <div class="container">
+    <div class="about-preview-grid">
+      <div>
+        <p class="section-label reveal">О нас</p>
+        <h2 class="section-title reveal reveal-delay-1">
+          Место, где кофе<br>становится искусством
+        </h2>
+        <p class="section-desc reveal reveal-delay-2" style="margin-bottom: 24px;">
+          Brew & Beans — это не просто кофейня. Это пространство,
+          где каждая чашка готовится с любовью и уважением к традициям.
+          Мы обжариваем зёрна вручную, экспериментируем с методами
+          заваривания и создаём атмосферу, в которой хочется
+          остаться на весь день.
+        </p>
+        <div class="reveal reveal-delay-3">
+          <a href="about.html" class="btn btn-outline">Подробнее о нас</a>
+        </div>
+      </div>
+      <img
+        class="about-preview-image reveal reveal-delay-1"
+        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&h=900&q=80"
+        alt="Интерьер кофейни"
+        loading="lazy"
+      >
+    </div>
+  </div>
+</section>
+
+<!-- ========== МЕНЮ (ПРЕВЬЮ) ========== -->
+<section class="section">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 16px;">
+      <p class="section-label reveal">Наше меню</p>
+      <h2 class="section-title reveal reveal-delay-1">
+        Популярные позиции
+      </h2>
+      <p class="section-desc reveal reveal-delay-2" style="margin: 0 auto;">
+        От классики до авторских рецептов.
+      </p>
+    </div>
+    <div class="menu-grid" id="indexMenuGrid">
+      <!-- JS -->
+    </div>
+    <div style="text-align: center; margin-top: 40px;" class="reveal">
+      <a href="menu.html" class="btn btn-outline">Полное меню</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ОТЗЫВЫ ========== -->
+<section class="section" style="background:rgba(255,255,255,0.015);">
+  <div class="container">
+    <div style="text-align: center; margin-bottom: 16px;">
+      <p class="section-label reveal">Отзывы</p>
+      <h2 class="section-title reveal reveal-delay-1">Что говорят наши гости</h2>
+      <p class="section-desc reveal reveal-delay-2" style="margin: 0 auto;">Более 2500 гостей ежемесячно доверяют нам.</p>
+    </div>
+    <div class="reviews-track reveal" id="reviewsTrack"></div>
+    <div class="reviews-dots reveal" id="reviewsDots"></div>
+  </div>
+</section>
+
+<!-- ========== CTA ========== -->
+<section class="cta">
+  <div class="container">
+    <h2 class="reveal">Готовы попробовать?</h2>
+    <p class="reveal reveal-delay-1">Забронируйте столик или закажите навынос. Мы ждём вас.</p>
+    <div class="reveal reveal-delay-2">
+      <a href="contact.html" class="btn btn-primary">Забронировать столик</a>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ПОДВАЛ ========== -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">BREW <span>&</span> BEANS</a>
+        <p>Спешелти кофейня в центре Москвы.<br>Slow Bar, свежая обжарка и домашняя выпечка.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Навигация</h4>
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">О нас</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+      <div class="footer-links">
+        <h4>Информация</h4>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Вакансии</a>
+        <a href="#">Доставка</a>
+      </div>
+      <div>
+        <h4>Мы в соцсетях</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg>
+          </a>
+          <a href="#" aria-label="Telegram">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9 22 2z"/></svg>
+          </a>
+          <a href="#" aria-label="VK">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C3.606 0 0 3.606 0 8.316v7.368C0 20.394 3.606 24 8.316 24h7.368C20.394 24 24 20.394 24 15.684V8.316C24 3.606 20.394 0 15.684 0zm3.6 16.772h-1.5c-.6 0-.78-.456-1.44-1.296-.72-.78-1.02-.876-1.2-.876-.24 0-.36.12-.36.72v1.02c0 .3-.12.48-.54.48a5.11 5.11 0 0 1-2.22-.9c-1.56-.96-2.76-2.88-2.88-3.06-.12-.24-.24-.48-.24-.72 0-.18.12-.36.24-.36s.36-.12.48-.12.18-.12.12-.24c-.06-.12-.24-.48-.36-.72-.3-.72-.84-1.56-1.2-2.04-.18-.24-.36-.36-.6-.36h-.48c-.18 0-.36.12-.36.36v.6c0 .36.12.72.24 1.02.6 1.2 1.56 2.28 1.68 2.4.12.12.24.24.24.36 0 .12-.12.24-.24.36-.24.24-.36.48-.36.72 0 .24.12.48.24.6.6.72 1.68 1.74 1.68 1.74s.12.12.12.24c0 .12-.12.24-.24.36-.36.36-1.08 1.2-1.2 1.44-.12.24-.36.48-.12.72.24.24.72.36 1.08.48.48.12.96.36 1.44.72.48.36.96.84 1.44 1.44.36.48.72.96 1.08 1.2.24.12.48.24.72.24h1.5c.36 0 .6-.24.6-.6v-1.44c0-.36.12-.6.36-.6.24 0 .48.12.84.6.24.36.48.72.84 1.08.24.24.48.48.84.48h1.5c.36 0 .6-.24.6-.6-.06-.48-.84-1.44-1.68-2.4-.48-.6-.84-1.08-.96-1.32-.12-.24-.12-.48 0-.72.12-.24.6-.72 1.08-1.2.72-.72 1.56-1.68 1.8-2.16.24-.48.48-.84.6-1.08.12-.24 0-.48-.24-.48z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Brew & Beans. Все права защищены.</span>
+      <span>Сделано с любовью к кофе</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ========== WHATSAPP ========== -->
+<a class="whatsapp-float" href="https://wa.me/79853697595" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ========== КНОПКА НАВЕРХ ========== -->
+<button class="scroll-top" id="scrollTop" type="button" aria-label="Наверх">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<!-- ========== СКРИПТЫ ========== -->
+<script>
+(function() {
+  'use strict';
+
+  /* Particles */
+  (function() {
+    var hero = document.querySelector('.hero');
+    if (!hero) return;
+    var container = document.createElement('div');
+    container.className = 'particles';
+    hero.appendChild(container);
+    for (var i = 0; i < 20; i++) {
+      var p = document.createElement('div');
+      p.className = 'particle';
+      p.style.left = Math.random() * 100 + '%';
+      p.style.animationDelay = Math.random() * 8 + 's';
+      p.style.animationDuration = (6 + Math.random() * 6) + 's';
+      p.style.width = p.style.height = (3 + Math.random() * 5) + 'px';
+      p.style.background = ['#C8A27A','#B8860B','#D4A574','#A67C52'][Math.floor(Math.random() * 4)];
+      container.appendChild(p);
+    }
+  })();
+
+  /* Parallax */
+  var parallaxEl = document.querySelector('.hero-parallax');
+  if (parallaxEl) {
+    window.addEventListener('scroll', function() {
+      var y = window.pageYOffset || document.documentElement.scrollTop;
+      if (window.innerWidth > 767) {
+        parallaxEl.style.transform = 'translateY(' + (y * 0.35) + 'px)';
+      }
+    }, { passive: true });
+  }
+
+  /* Menu data */
+  var preview = [
+    { id: 1, title: 'Flat White', desc: 'Двойной эспрессо с бархатистым молоком.', price: 350, badge: 'Хит' },
+    { id: 2, title: 'Chemex', desc: 'Фильтр-кофе из Эфиопии. Цитрус, бергамот.', price: 490, badge: 'Наш выбор' },
+    { id: 3, title: 'Тирамису', desc: 'Классический итальянский десерт.', price: 450, badge: 'Десерт' }
+  ];
+
+  function badgeClass(name) {
+    if (name === 'Хит' || name === 'Наш выбор') return 'hit';
+    if (name === 'Новинка') return 'new';
+    if (name === 'Десерт') return 'dessert';
+    if (name === 'Выпечка') return 'baking';
+    return '';
+  }
+
+  var grid = document.getElementById('indexMenuGrid');
+  if (grid) {
+    preview.forEach(function(item) {
+      var card = document.createElement('div');
+      card.className = 'menu-card reveal';
+      card.innerHTML =
+        '<div class="menu-card-img" style="display:flex;align-items:center;justify-content:center;padding:32px;">' +
+          '<svg viewBox="0 0 80 60" fill="none" stroke="#C8A27A" stroke-width="1.8" stroke-linecap="round" style="width:100%;max-width:100px;height:auto;opacity:0.8;">' +
+            (item.id === 1 ? '<path d="M10 20h50v30a5 5 0 0 1-5 5H15a5 5 0 0 1-5-5V20z"/><path d="M60 25a10 10 0 0 0 0-20"/><path d="M25 10c-3 8-8 10-15 10" opacity="0.4"/><path d="M30 8c-2 5-5 7-10 7" opacity="0.3"/><path d="M20 42c5 3 15 3 20 0" opacity="0.4"/>' :
+             item.id === 2 ? '<path d="M40 5v25"/><path d="M15 30h50l-8 8H23l-8-8z"/><path d="M25 38v12a4 4 0 0 0 4 4h22a4 4 0 0 0 4-4V38"/><path d="M33 25c-5 3-12 2-15-2" opacity="0.4"/><path d="M42 22c2-3 8-3 12 0" opacity="0.4"/>' :
+             '<path d="M15 35h50l-6 16H21l-6-16z"/><path d="M21 35l4-12h30l4 12"/><path d="M35 23c-2 4-3 8-1 12" opacity="0.4"/><path d="M45 23c2 4 3 8 1 12" opacity="0.4"/><path d="M40 42v8" opacity="0.3"/><path d="M34 50h12" opacity="0.3"/>') +
+          '</svg>' +
+        '</div>' +
+        '<div class="menu-card-body">' +
+          '<h3 class="menu-card-title">' + item.title + '</h3>' +
+          '<p class="menu-card-desc">' + item.desc + '</p>' +
+          '<div class="menu-card-footer">' +
+            '<span class="menu-card-price">' + item.price + ' ₽</span>' +
+            '<span class="menu-card-badge' + (badgeClass(item.badge) ? ' ' + badgeClass(item.badge) : '') + '">' + item.badge + '</span>' +
+          '</div>' +
+        '</div>';
+      grid.appendChild(card);
+    });
+  }
+})();
+</script>
+<script src="js/main.js"></script>
+<script>
+(function() {
+  var cards = document.querySelectorAll('#indexMenuGrid .menu-card.reveal');
+  setTimeout(function() {
+    cards.forEach(function(card) {
+      if (window.BB && window.BB.revealObserver) {
+        window.BB.revealObserver.observe(card);
+      }
+    });
+  }, 50);
+})();
+</script>
+
+<script>
+(function() {
+  'use strict';
+  var reviews = [
+    { name: 'Анна К.', text: 'Лучший кофе в Москве. Chemex из Эфиопии — это что-то невероятное. Бариста подробно рассказал о зёрнах и методе заваривания.', stars: 5, src: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100&q=80' },
+    { name: 'Михаил С.', text: 'Отличное место для работы. Быстрый Wi-Fi, вкусный раф, приятная атмосфера. Стал ходить сюда регулярно.', stars: 5, src: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80' },
+    { name: 'Елена В.', text: 'Брали тирамису и капучино — идеальное сочетание. Десерт словно в Италии. Очень уютное место, рекомендую!', stars: 5, src: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&h=100&q=80' },
+    { name: 'Дмитрий К.', text: 'Отличный фильтр-кофе и знающие бариста. Есть альтернативные методы заваривания. Цены адекватные для спешелти.', stars: 4, src: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&h=100&q=80' },
+    { name: 'Ольга П.', text: 'Обожаю этот кофейный уголок. Всегда свежая выпечка, приветливый персонал. Отличное место для завтрака в выходной.', stars: 5, src: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=100&h=100&q=80' },
+    { name: 'Алексей Р.', text: 'Хороший спешелти-кофе, приятная обстановка. Единственное — иногда шумновато в часы пик. Но качество кофе перекрывает всё.', stars: 4, src: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=100&h=100&q=80' }
+  ];
+
+  var track = document.getElementById('reviewsTrack');
+  var dots = document.getElementById('reviewsDots');
+  if (!track || !dots) return;
+
+  reviews.forEach(function(r) {
+    var card = document.createElement('div');
+    card.className = 'review-card';
+    var starsHtml = '';
+    for (var i = 0; i < 5; i++) starsHtml += '<svg width="14" height="14" viewBox="0 0 24 24"' + (i < r.stars ? ' fill="#C8A27A"' : ' fill="rgba(255,255,255,0.1)"') + '><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>';
+    card.innerHTML =
+      '<div class="review-stars">' + starsHtml + '</div>' +
+      '<p class="review-text">"' + r.text + '"</p>' +
+      '<div class="review-author">' +
+        '<div class="review-avatar"><img src="' + r.src + '" alt="' + r.name + '" loading="lazy"></div>' +
+        '<div><div class="review-name">' + r.name + '</div><div class="review-source">Google Maps</div></div>' +
+      '</div>';
+    track.appendChild(card);
+  });
+  /* Clone first card for seamless infinite forward loop */
+  var firstCard = track.querySelector('.review-card');
+  var REAL_COUNT;
+  if (firstCard) {
+    var clone = firstCard.cloneNode(true);
+    track.appendChild(clone);
+    REAL_COUNT = track.querySelectorAll('.review-card').length - 1;
+  } else {
+    REAL_COUNT = 0;
+  }
+
+  var scrollTimer;
+  function getMaxScroll() {
+    return track.scrollWidth - track.clientWidth;
+  }
+  function updateDots() {
+    if (!REAL_COUNT) return;
+    var ms = getMaxScroll();
+    var ratio = ms > 0 ? track.scrollLeft / ms : 0;
+    var active = Math.round(ratio * (REAL_COUNT - 1));
+    dots.querySelectorAll('.reviews-dot').forEach(function(dot, i) {
+      dot.classList.toggle('active', i === active);
+    });
+  }
+
+  reviews.forEach(function(_, i) {
+    var dot = document.createElement('button');
+    dot.className = 'reviews-dot' + (i === 0 ? ' active' : '');
+    dot.setAttribute('aria-label', 'Отзыв ' + (i + 1));
+    (function(idx) {
+      dot.addEventListener('click', function() {
+        var ms = getMaxScroll();
+        track.scrollTo({ left: ms * idx / (REAL_COUNT - 1), behavior: 'smooth' });
+      });
+    })(i);
+    dots.appendChild(dot);
+  });
+
+  /* Drag to scroll */
+  var isDragging = false, startX = 0, scrollStart = 0;
+  track.addEventListener('mousedown', function(e) {
+    isDragging = true;
+    track.classList.add('dragging');
+    startX = e.pageX;
+    scrollStart = track.scrollLeft;
+  });
+  window.addEventListener('mousemove', function(e) {
+    if (!isDragging) return;
+    e.preventDefault();
+    track.scrollLeft = scrollStart - (e.pageX - startX);
+  });
+  window.addEventListener('mouseup', function() {
+    if (!isDragging) return;
+    isDragging = false;
+    track.classList.remove('dragging');
+  });
+
+  /* Auto-play */
+  var autoTimer;
+  function startAuto() {
+    autoTimer = setInterval(function() {
+      var ms = getMaxScroll();
+      var ratio = ms > 0 ? track.scrollLeft / ms : 0;
+      var cur = Math.round(ratio * (REAL_COUNT - 1));
+      var next = (cur + 1) % REAL_COUNT;
+      if (next === 0) {
+        /* Scroll to clone, then instantly reset to 0 */
+        track.scrollTo({ left: ms, behavior: 'smooth' });
+        requestAnimationFrame(function check() {
+          if (track.scrollLeft >= ms - 5) {
+            track.scrollLeft = 0;
+            updateDots();
+          } else {
+            requestAnimationFrame(check);
+          }
+        });
+      } else {
+        track.scrollTo({ left: ms * next / (REAL_COUNT - 1), behavior: 'smooth' });
+      }
+    }, 3500);
+  }
+  function stopAuto() { clearInterval(autoTimer); }
+  startAuto();
+  track.addEventListener('scroll', function() {
+    /* At clone → snap back instantly */
+    if (getMaxScroll() > 0 && track.scrollLeft >= getMaxScroll() - 5) {
+      track.scrollLeft = 0;
+    }
+    clearTimeout(scrollTimer);
+    scrollTimer = setTimeout(updateDots, 50);
+  }, { passive: true });
+  track.addEventListener('mouseenter', stopAuto);
+  track.addEventListener('mouseleave', startAuto);
+  track.addEventListener('touchstart', stopAuto, { passive: true });
+  track.addEventListener('touchend', startAuto, { passive: true });
+})();
+</script>
+
+</body>
+</html>
