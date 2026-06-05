@@ -6,7 +6,7 @@ from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup, ReplyKe
 from telegram.ext import Application, CommandHandler, CallbackQueryHandler, MessageHandler, filters, ContextTypes
 
 import os
-TOKEN = os.environ.get('TELEGRAM_TOKEN', '8527774566:AAFNHn3pZCUWqQd-Sz_6iqC6G-i42Ic-VEg')
+TOKEN = os.environ.get('TELEGRAM_TOKEN', '8527774566:AAGA0bwECbJJCs8xkyf4i934xjHKxlDBP_Q')
 CHAT_ID = os.environ.get('TELEGRAM_CHAT_ID', '5283920277')
 DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'bookings.json')
 HOST = '0.0.0.0'
