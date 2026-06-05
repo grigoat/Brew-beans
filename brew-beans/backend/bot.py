@@ -10,7 +10,7 @@ TOKEN = os.environ.get('TELEGRAM_TOKEN', '8527774566:AAGA0bwECbJJCs8xkyf4i934xjH
 CHAT_ID = os.environ.get('TELEGRAM_CHAT_ID', '5283920277')
 DATA_FILE = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'bookings.json')
 HOST = '0.0.0.0'
-PORT = 5000
+PORT = int(os.environ.get('PORT', 5000))
 BLOCK_HOURS = 2
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s [%(levelname)s] %(name)s: %(message)s')
