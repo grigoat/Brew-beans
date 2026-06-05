@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>О нас — BREW & BEANS</title>
+  <meta name="description" content="История кофейни Brew & Beans, наша команда, философия и ценности.">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="container">
+    <a href="index.html" class="logo">BREW <span>&</span> BEANS</a>
+    <nav class="nav">
+      <a href="index.html">Главная</a>
+      <a href="menu.html">Меню</a>
+      <a href="about.html" class="active">О нас</a>
+      <a href="gallery.html">Галерея</a>
+      <a href="contact.html">Контакты</a>
+    </nav>
+    <button class="burger" id="burger" type="button" aria-label="Меню">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="index.html" data-mobile-link>Главная</a>
+  <a href="menu.html" data-mobile-link>Меню</a>
+  <a href="about.html" data-mobile-link>О нас</a>
+  <a href="gallery.html" data-mobile-link>Галерея</a>
+  <a href="contact.html" data-mobile-link>Контакты</a>
+</div>
+
+<section class="page-header">
+  <div class="container">
+    <div class="breadcrumbs">
+      <a href="index.html">Главная</a>
+      <span>/</span>
+      <span>О нас</span>
+    </div>
+    <p class="page-label">О нас</p>
+    <h1 class="page-title">История Brew & Beans</h1>
+    <p class="page-desc">Как мы начинали, к чему пришли и что движет нами каждый день.</p>
+  </div>
+</section>
+
+<!-- ========== ИСТОРИЯ ========== -->
+<section class="section">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;">
+      <div>
+        <p class="section-label reveal">Наша философия</p>
+        <h2 class="section-title reveal reveal-delay-1">Больше, чем просто кофе</h2>
+        <p class="section-desc reveal reveal-delay-2" style="margin-bottom:20px;">
+          Brew & Beans родился из любви к кофе. Мы верим, что хороший кофе
+          объединяет людей, вдохновляет на разговоры и дарит моменты
+          настоящего удовольствия.
+        </p>
+        <p class="section-desc reveal reveal-delay-3" style="margin-bottom:0;">
+          Наш путь начался с маленькой обжарки в гараже и желания
+          показать Москве, каким может быть кофе. Сегодня мы —
+          полноценная спешелти кофейня с собственной обжаркой,
+          обученной командой и любящими гостями.
+        </p>
+      </div>
+      <div class="reveal reveal-delay-1" style="border-radius:8px;overflow:hidden;background:linear-gradient(135deg,#2d1f14,#1a1a1a);height:400px;">
+        <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?auto=format&fit=crop&w=800&h=900&q=80" alt="Интерьер кофейни" style="width:100%;height:100%;object-fit:cover;" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ЦИФРЫ ========== -->
+<section class="section" style="background:rgba(255,255,255,0.015);">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;">
+      <div class="stat-card reveal" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:32px 24px;text-align:center;">
+        <div style="font-family:'Playfair Display',serif;font-size:42px;color:#C8A27A;line-height:1;"><span class="counter" data-target="7">0</span><span style="font-size:20px;"> лет</span></div>
+        <p style="font-size:13px;color:rgba(245,240,235,0.5);margin-top:8px;">Опыта в кофейном деле</p>
+      </div>
+      <div class="stat-card reveal reveal-delay-1" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:32px 24px;text-align:center;">
+        <div style="font-family:'Playfair Display',serif;font-size:42px;color:#C8A27A;line-height:1;"><span class="counter" data-target="12">0</span><span style="font-size:20px;">+</span></div>
+        <p style="font-size:13px;color:rgba(245,240,235,0.5);margin-top:8px;">Методов заваривания</p>
+      </div>
+      <div class="stat-card reveal reveal-delay-2" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:32px 24px;text-align:center;">
+        <div style="font-family:'Playfair Display',serif;font-size:42px;color:#C8A27A;line-height:1;"><span class="counter" data-target="2500">0</span><span style="font-size:20px;">+</span></div>
+        <p style="font-size:13px;color:rgba(245,240,235,0.5);margin-top:8px;">Довольных гостей в месяц</p>
+      </div>
+      <div class="stat-card reveal reveal-delay-3" style="background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:8px;padding:32px 24px;text-align:center;">
+        <div style="font-family:'Playfair Display',serif;font-size:42px;color:#C8A27A;line-height:1;"><span class="counter" data-target="100">0</span><span style="font-size:20px;">%</span></div>
+        <p style="font-size:13px;color:rgba(245,240,235,0.5);margin-top:8px;">Спешелти Арабика</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ТАЙМЛАЙН ========== -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px;">
+      <p class="section-label reveal">Наш путь</p>
+      <h2 class="section-title reveal reveal-delay-1">Как мы развивались</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item reveal">
+        <div class="timeline-content">
+          <div class="timeline-year">2019</div>
+          <h3>Рождение идеи</h3>
+          <p>Основатели проекта начали обжаривать кофе вручную в небольшом гараже, экспериментируя с профилями обжарки.</p>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-1">
+        <div class="timeline-content">
+          <div class="timeline-year">2020</div>
+          <h3>Первая кофейня</h3>
+          <p>Открытие первой точки в центре Москвы. Slow Bar, 5 методов заваривания и собственная обжарка.</p>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-2">
+        <div class="timeline-content">
+          <div class="timeline-year">2022</div>
+          <h3>Рост команды</h3>
+          <p>К нам присоединились бариста из ведущих кофейных проектов Европы. Запуск образовательных курсов.</p>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-3">
+        <div class="timeline-content">
+          <div class="timeline-year">2024</div>
+          <h3>Новый уровень</h3>
+          <p>Запуск собственного обжарочного цеха. Начало оптовых поставок спешелти кофе в другие заведения Москвы.</p>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+      <div class="timeline-item reveal reveal-delay-4">
+        <div class="timeline-content">
+          <div class="timeline-year">2026</div>
+          <h3>Планы на будущее</h3>
+          <p>Открытие второй точки, запуск интернет-магазина зерна и расширение линейки авторских напитков.</p>
+        </div>
+        <div class="timeline-dot"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== КОМАНДА ========== -->
+<section class="section" style="background:rgba(255,255,255,0.015);">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:16px;">
+      <p class="section-label reveal">Команда</p>
+      <h2 class="section-title reveal reveal-delay-1">Кто делает наш кофе</h2>
+      <p class="section-desc reveal reveal-delay-2" style="margin:0 auto;">Профессионалы, объединённые любовью к кофе.</p>
+    </div>
+    <div class="team-grid">
+      <div class="team-card reveal">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&h=400&q=80" alt="Алексей Соколов" loading="lazy">
+        </div>
+        <h3>Алексей Соколов</h3>
+        <p class="team-role">Основатель, главный обжарщик</p>
+        <p>Сертифицированный Q-Grader, прошёл стажировку в кофейнях Копенгагена и Лондона.</p>
+      </div>
+      <div class="team-card reveal reveal-delay-1">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&h=400&q=80" alt="Мария Васильева" loading="lazy">
+        </div>
+        <h3>Мария Васильева</h3>
+        <p class="team-role">Шеф-бариста</p>
+        <p>Победительница чемпионата бариста России 2023. Разрабатывает авторские рецепты.</p>
+      </div>
+      <div class="team-card reveal reveal-delay-2">
+        <div class="team-photo">
+          <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&h=400&q=80" alt="Дмитрий Новиков" loading="lazy">
+        </div>
+        <h3>Дмитрий Новиков</h3>
+        <p class="team-role">Кондитер</p>
+        <p>Выпускник Le Cordon Bleu. Создаёт десерты, которые идеально дополняют кофе.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== ЦЕННОСТИ ========== -->
+<section class="section">
+  <div class="container">
+    <div style="text-align:center;margin-bottom:48px;">
+      <p class="section-label reveal">Наши ценности</p>
+      <h2 class="section-title reveal reveal-delay-1">Чем мы руководствуемся</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:32px;">
+      <div class="reveal" style="padding:32px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:12px;">
+        <div style="font-family:'Playfair Display',serif;font-size:20px;color:#C8A27A;margin-bottom:12px;">01</div>
+        <h3 style="font-size:18px;margin-bottom:8px;">Качество</h3>
+        <p style="font-size:14px;color:rgba(245,240,235,0.5);font-weight:300;">Мы выбираем только лучшие зёрна и контролируем каждый этап — от закупки до чашки.</p>
+      </div>
+      <div class="reveal reveal-delay-1" style="padding:32px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:12px;">
+        <div style="font-family:'Playfair Display',serif;font-size:20px;color:#C8A27A;margin-bottom:12px;">02</div>
+        <h3 style="font-size:18px;margin-bottom:8px;">Образование</h3>
+        <p style="font-size:14px;color:rgba(245,240,235,0.5);font-weight:300;">Мы делимся знаниями: проводим каппинги, курсы для бариста и открытые лекции.</p>
+      </div>
+      <div class="reveal reveal-delay-2" style="padding:32px;background:rgba(255,255,255,0.02);border:1px solid rgba(255,255,255,0.06);border-radius:12px;">
+        <div style="font-family:'Playfair Display',serif;font-size:20px;color:#C8A27A;margin-bottom:12px;">03</div>
+        <h3 style="font-size:18px;margin-bottom:8px;">Атмосфера</h3>
+        <p style="font-size:14px;color:rgba(245,240,235,0.5);font-weight:300;">Brew & Beans — место, где хочется остаться. Уют, музыка, свет и запах кофе.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">BREW <span>&</span> BEANS</a>
+        <p>Спешелти кофейня в центре Москвы.<br>Slow Bar, свежая обжарка и домашняя выпечка.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Навигация</h4>
+        <a href="index.html">Главная</a>
+        <a href="menu.html">Меню</a>
+        <a href="about.html">О нас</a>
+        <a href="gallery.html">Галерея</a>
+        <a href="contact.html">Контакты</a>
+      </div>
+      <div class="footer-links">
+        <h4>Информация</h4>
+        <a href="#">Политика конфиденциальности</a>
+        <a href="#">Вакансии</a>
+        <a href="#">Доставка</a>
+      </div>
+      <div>
+        <h4>Мы в соцсетях</h4>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor"/></svg></a>
+          <a href="#" aria-label="Telegram"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 2 11 13"/><path d="M22 2 15 22 11 13 2 9 22 2z"/></svg></a>
+          <a href="#" aria-label="VK"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M15.684 0H8.316C3.606 0 0 3.606 0 8.316v7.368C0 20.394 3.606 24 8.316 24h7.368C20.394 24 24 20.394 24 15.684V8.316C24 3.606 20.394 0 15.684 0zm3.6 16.772h-1.5c-.6 0-.78-.456-1.44-1.296-.72-.78-1.02-.876-1.2-.876-.24 0-.36.12-.36.72v1.02c0 .3-.12.48-.54.48a5.11 5.11 0 0 1-2.22-.9c-1.56-.96-2.76-2.88-2.88-3.06-.12-.24-.24-.48-.24-.72 0-.18.12-.36.24-.36s.36-.12.48-.12.18-.12.12-.24c-.06-.12-.24-.48-.36-.72-.3-.72-.84-1.56-1.2-2.04-.18-.24-.36-.36-.6-.36h-.48c-.18 0-.36.12-.36.36v.6c0 .36.12.72.24 1.02.6 1.2 1.56 2.28 1.68 2.4.12.12.24.24.24.36 0 .12-.12.24-.24.36-.24.24-.36.48-.36.72 0 .24.12.48.24.6.6.72 1.68 1.74 1.68 1.74s.12.12.12.24c0 .12-.12.24-.24.36-.36.36-1.08 1.2-1.2 1.44-.12.24-.36.48-.12.72.24.24.72.36 1.08.48.48.12.96.36 1.44.72.48.36.96.84 1.44 1.44.36.48.72.96 1.08 1.2.24.12.48.24.72.24h1.5c.36 0 .6-.24.6-.6v-1.44c0-.36.12-.6.36-.6.24 0 .48.12.84.6.24.36.48.72.84 1.08.24.24.48.48.84.48h1.5c.36 0 .6-.24.6-.6-.06-.48-.84-1.44-1.68-2.4-.48-.6-.84-1.08-.96-1.32-.12-.24-.12-.48 0-.72.12-.24.6-.72 1.08-1.2.72-.72 1.56-1.68 1.8-2.16.24-.48.48-.84.6-1.08.12-.24 0-.48-.24-.48z"/></svg></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; 2026 Brew & Beans. Все права защищены.</span>
+      <span>Сделано с любовью к кофе</span>
+    </div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/79853697595" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<button class="scroll-top" id="scrollTop" type="button" aria-label="Наверх">
+  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script src="js/main.js"></script>
+<script>
+(function() {
+  var countersInitialized = false;
+  var counterObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting && !countersInitialized) {
+        countersInitialized = true;
+        var counters = document.querySelectorAll('.counter');
+        counters.forEach(function(counter) {
+          var target = parseInt(counter.getAttribute('data-target'), 10);
+          var current = 0;
+          var step = Math.max(1, Math.ceil(target / 60));
+          var interval = setInterval(function() {
+            current += step;
+            if (current >= target) { current = target; clearInterval(interval); }
+            counter.textContent = current;
+          }, 25);
+        });
+        counterObserver.disconnect();
+      }
+    });
+  }, { threshold: 0.5 });
+  var stat = document.querySelector('.stat-card');
+  if (stat) counterObserver.observe(stat);
+})();
+</script>
+
+</body>
+</html>
