@@ -9,7 +9,7 @@
   <meta property="og:description" content="Спешелти кофейня в центре Москвы. Slow Bar, свежая обжарка, домашняя выпечка.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E☕%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="favicon.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -167,7 +167,7 @@
 
     .hero {
       position: relative;
-      height: 100vh;
+      height: 100vh; height: 100dvh;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -425,7 +425,15 @@
       border-radius: 8px;
       overflow: hidden;
       background: linear-gradient(135deg, #2d1f14, #1a1a1a);
-      min-height: 100px;
+      min-height: 200px;
+    }
+    .gallery-item.img-failed {
+      display: flex; align-items: center; justify-content: center;
+    }
+    .gallery-item.img-failed::after {
+      content: '☕';
+      font-size: 40px;
+      opacity: 0.3;
     }
     .gallery-item img { width: 100%; display: block; transition: transform 0.6s ease, filter 0.4s ease; }
     .gallery-item:hover img { transform: scale(1.05); filter: brightness(0.7); }
@@ -708,8 +716,8 @@
       .menu-card-img { height: 170px; }
       .menu-card-svg { padding: 24px; }
       .gallery-grid { column-count: 2; column-gap: 8px; }
-      .gallery-item { margin-bottom: 8px; }
-      .gallery-item-overlay { opacity: 0; }
+      .gallery-item { margin-bottom: 8px; min-height: 120px; }
+      .gallery-item-overlay { opacity: 1; background: rgba(0,0,0,0.3); }
       .gallery-item-overlay span { font-size: 10px; }
       .section { padding: 60px 0; }
       .contact-map { height: 200px; }
@@ -720,7 +728,7 @@
       .toast.show { transform: translateY(0); }
     }
     @media (max-width: 400px) {
-      .gallery-grid { column-count: 2; }
+      .gallery-grid { column-count: 1; }
       .hero-title { font-size: 34px; }
       .about-stats { grid-template-columns: 1fr 1fr; }
       .stat-card { padding: 16px; }
@@ -771,9 +779,10 @@
       .menu-card:hover { transform: none; box-shadow: none; }
       .menu-card:active { transform: translateY(-4px); }
       .gallery-item:hover img { transform: none; filter: none; }
-      .gallery-item-overlay { opacity: 0; }
       .btn:hover { transform: none; box-shadow: none; }
       .form-submit:hover { transform: none; box-shadow: none; }
+      .date-picker-hidden { pointer-events: auto; }
+      .gallery-item-overlay { opacity: 1; background: rgba(0,0,0,0.3); }
     }
     @media (prefers-reduced-motion: reduce) {
       *, *::before, *::after {
@@ -786,6 +795,7 @@
       .hero-scroll { animation: none; }
       .particle { display: none; }
     }
+    [id] { scroll-margin-top: 100px; }
     .form-group input[type="number"] { -moz-appearance: textfield; }
     .form-group input[type="number"]::-webkit-outer-spin-button,
     .form-group input[type="number"]::-webkit-inner-spin-button { -webkit-appearance: none; margin: 0; }
@@ -930,10 +940,12 @@
       </div>
       <img
         class="about-image reveal reveal-delay-1"
-        src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=800&h=1000&q=100"
+        src="coffee.jpg"
         alt="Интерьер кофейни"
         loading="lazy"
+        onerror="this.style.display='none';this.parentElement.querySelector('.about-image-fallback')&&(this.parentElement.querySelector('.about-image-fallback').style.display='flex')"
       >
+      <div class="about-image about-image-fallback" style="display:none;align-items:center;justify-content:center;font-size:60px;opacity:0.3">☕</div>
     </div>
     <div class="about-stats" style="margin-top: 60px;">
       <div class="stat-card reveal reveal-delay-1">
@@ -1325,12 +1337,14 @@
 
   var parallaxEl = document.getElementById('heroParallax');
 
-  window.addEventListener('scroll', function() {
-    var y = window.pageYOffset || document.documentElement.scrollTop;
-    if (window.innerWidth > 767) {
-      parallaxEl.style.transform = 'translateY(' + (y * 0.35) + 'px)';
-    }
-  }, { passive: true });
+  if (parallaxEl) {
+    window.addEventListener('scroll', function() {
+      var y = window.pageYOffset || document.documentElement.scrollTop;
+      if (window.innerWidth > 767) {
+        parallaxEl.style.transform = 'translateY(' + (y * 0.35) + 'px)';
+      }
+    }, { passive: true });
+  }
 
   /* ---------- INTERSECTION OBSERVER (FADE-IN-UP) ---------- */
   var revealObserver = new IntersectionObserver(function(entries) {
@@ -1419,7 +1433,7 @@
     el.className = 'gallery-item';
     el.dataset.index = item.id;
     el.innerHTML =
-      '<img src="' + item.src + '" alt="' + item.alt + '" loading="lazy" onerror="this.style.display=\'none\'">' +
+      '<img src="' + item.src + '" alt="' + item.alt + '" loading="lazy" onerror="this.parentElement.classList.add(\'img-failed\')">' +
       '<div class="gallery-item-overlay"><span>Открыть</span></div>';
     galleryGrid.appendChild(el);
 
@@ -1750,9 +1764,18 @@
   var datePicker = document.getElementById('formDatePicker');
   var dateBtn = document.getElementById('formDateBtn');
   if (dateBtn && datePicker) {
+    function openNativeDatePicker() {
+      try { datePicker.showPicker(); } catch (_) {}
+      datePicker.focus();
+    }
     dateBtn.addEventListener('click', function(e) {
       e.preventDefault();
-      datePicker.showPicker();
+      openNativeDatePicker();
+    });
+    dateInput.addEventListener('click', function() {
+      if (('ontouchstart' in window) || navigator.maxTouchPoints > 0) {
+        openNativeDatePicker();
+      }
     });
     datePicker.addEventListener('change', function() {
       if (this.value) {
