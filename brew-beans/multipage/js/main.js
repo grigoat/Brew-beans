@@ -1,6 +1,22 @@
 (function () {
   'use strict';
 
+  /* ---------- Scroll progress bar ---------- */
+  var progress = document.createElement('div');
+  progress.className = 'scroll-progress';
+  progress.setAttribute('aria-hidden', 'true');
+  document.addEventListener('DOMContentLoaded', function () {
+    document.body.insertBefore(progress, document.body.firstChild);
+  });
+  function updateProgress() {
+    var doc = document.documentElement;
+    var max = (doc.scrollHeight - doc.clientHeight) || 1;
+    var ratio = Math.min(1, Math.max(0, (window.pageYOffset || doc.scrollTop) / max));
+    progress.style.transform = 'scaleX(' + ratio + ')';
+  }
+  window.addEventListener('scroll', updateProgress, { passive: true });
+  window.addEventListener('resize', updateProgress, { passive: true });
+
   /* ---------- Header scroll ---------- */
   var header = document.getElementById('header');
   var scrollTopBtn = document.getElementById('scrollTop');

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Страница не найдена — BREW & BEANS</title>
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#121212">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .nf {
+      min-height: 100vh; min-height: 100dvh;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      text-align: center; padding: 24px;
+      background: linear-gradient(135deg, #1a1a1a 0%, #2d1f14 40%, #0d0d0d 100%);
+      position: relative; overflow: hidden;
+    }
+    .nf::before {
+      content: ''; position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 40%, rgba(200,162,122,0.10) 0%, transparent 60%);
+    }
+    .nf-inner { position: relative; z-index: 1; }
+    .nf-code {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(90px, 22vw, 200px); line-height: 1;
+      background: linear-gradient(135deg, #B8860B, #C8A27A, #E8C9A0);
+      -webkit-background-clip: text; background-clip: text;
+      -webkit-text-fill-color: transparent; color: transparent;
+    }
+    .nf h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(22px, 4vw, 32px); margin: 8px 0 12px; color: #F5F0EB;
+    }
+    .nf p { color: rgba(245,240,235,0.5); font-weight: 300; max-width: 420px; margin: 0 auto 28px; }
+    .nf .btn { margin: 6px; }
+  </style>
+</head>
+<body>
+  <div class="nf">
+    <div class="nf-inner">
+      <div class="nf-code">404</div>
+      <h1>Кажется, чашка опустела</h1>
+      <p>Страница, которую вы искали, не найдена или была перемещена. Давайте вернёмся туда, где варят кофе.</p>
+      <a href="index.html" class="btn btn-primary">На главную</a>
+      <a href="menu.html" class="btn btn-outline">Посмотреть меню</a>
+    </div>
+  </div>
+</body>
+</html>
